@@ -1,0 +1,1 @@
+All artwork converted during the migration process is stored here
