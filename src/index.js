@@ -112,10 +112,10 @@ async function createDigitalAsset(assetInfo,image) {
 			name: filename.replace(/[&\/\\#,+()$~%'":;*?<>{}]/g,''),//strip invalid chars for OCM asset name
 			type: `${process.env.OCM_Image_Type}`, //set Digital Asset type ie Image or Custom
 			repositoryId: `${process.env.REPO}`, // OCM Repository to store digital asset
-			//fields - if type = 'Image' then fields:{} empty object
+			//fields - if digital asset type = 'Image' then fields:{} empty object
 			fields:{
-				title: filename, // set title as asset filename
-				alternatetext: image.alt || ' ', //try to grab alt data from shopify and set
+				//title: filename, // set title as asset filename
+				//alternatetext: image.alt || ' ', //try to grab alt data from shopify and set
 			},
 			'fileExtension': fileExtension, //define extension
 			/*additional info to assign ie taxonomies, collection etc here if needed
@@ -209,9 +209,9 @@ async function createAsset(product, primaryImg, gallery) {
 		let params = {
 			'name': product.title.replace(/[&\/\\#,+()$~%'":;*?<>{}]/g,''),//strip invalid chars for OCM asset name
 			'slug': product.variants[0].sku, // add product sku
-			'type': 'Product-SKU', //assing against product asset type
+			'type': `${process.env.OCM_Product_Type}`, //assing against product asset type
 			//'description': '',
-			'repositoryId': process.env.repo,
+			'repositoryId': `${process.env.repo}`,
 			//'language': '',
 			//'translatable': '',
 			'fields': {
