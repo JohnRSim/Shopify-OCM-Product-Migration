@@ -1,5 +1,6 @@
 # Shopify-OCM-Product-Migration
-Demo code providing a sample on how to quickly copy and map Product content from Shopify to OCM
+Demo code providing a sample on how to quickly copy and map Product content from Shopify to Oracle Content Management.
+For more info head over to https://bitmapbytes.com to read a blog post on the process.
 
 # Setup Env
 Create .env file in the root project folder
@@ -10,6 +11,7 @@ SHOPIFY_RELATIVE_PRODUCT_API=
 OCM_TOKEN=
 OCM_URL=
 OCM_Image_Type=Image
+OCM_Product_Type=
 REPO=
 ```
 
@@ -56,6 +58,9 @@ Your OCM domain ie. https://<instanceName>.cec.ocp.oraclecloud.com
 
 #### OCM_Image_Type
 Leave as the default Image digital asset type or create your own and supply additional field metadata for SEO, alt tags etc..\
+
+#### OCM_Product_Type
+This is the Custom Asset Type name that you want to assign and map data from Shopify to OCM 
 
 #### REPO
 Your OCM repository ID 
