@@ -11,6 +11,7 @@ SHOPIFY_RELATIVE_PRODUCT_API=
 OCM_TOKEN=
 OCM_URL=
 OCM_Image_Type=Image
+OCM_Product_Type=
 REPO=
 ```
 
@@ -57,6 +58,9 @@ Your OCM domain ie. https://<instanceName>.cec.ocp.oraclecloud.com
 
 #### OCM_Image_Type
 Leave as the default Image digital asset type or create your own and supply additional field metadata for SEO, alt tags etc..\
+
+#### OCM_Product_Type
+This is the Custom Asset Type name that you want to assign and map data from Shopify to OCM 
 
 #### REPO
 Your OCM repository ID 
