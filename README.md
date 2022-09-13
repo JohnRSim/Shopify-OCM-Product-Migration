@@ -2,6 +2,8 @@
 Demo code providing a sample on how to quickly copy and map Product content from Shopify to Oracle Content Management.
 For more info head over to https://bitmapbytes.com to read a blog post on the process.
 
+https://bitmapbytes.com/shopify-product-content-migration-guide-to-ocm/
+
 # Setup Env
 Create .env file in the root project folder
 ```
